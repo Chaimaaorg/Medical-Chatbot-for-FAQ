@@ -1,4 +1,4 @@
-# Medical Chatbot: Mental Health FAQ System Based on Google PaLM LLM and LangChain  
+# Medical Chatbot: Mental Health FAQ System Based on Google Generative AI LLM and LangChain  
 
 This is an end-to-end LLM project based on **Google Generative AI** and **LangChain**. We are building a **Q&A system** for a **Mental Health FAQ Chatbot** using a dataset from Kaggle. The dataset contains frequently asked questions related to mental health, and this system will provide a **Streamlit-based user interface** where users can ask questions and get accurate, context-aware answers.
 
