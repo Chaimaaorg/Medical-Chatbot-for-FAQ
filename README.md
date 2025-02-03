@@ -1,71 +1,68 @@
+# Medical Chatbot: Mental Health FAQ System Based on Google PaLM LLM and LangChain  
 
-# Codebasics Q&A: Question and Answer System Based on Google Palm LLM and Langchain for E-learning company  
-
-This is an end to end LLM project based on Google Palm and Langchain. We are building a Q&A system for an e-learning company called codebasics (website: codebasics.io). Codebasics sells data related courses and bootcamps. They have thousands of learners who uses discord server or email to ask questions. This system will provide a streamlit based user interface for students where they can ask questions and get answers. 
-
-![](codebasics_q_and_a.png)
+This is an end-to-end LLM project based on **Google Generative AI** and **LangChain**. We are building a **Q&A system** for a **Mental Health FAQ Chatbot** using a dataset from Kaggle. The dataset contains frequently asked questions related to mental health, and this system will provide a **Streamlit-based user interface** where users can ask questions and get accurate, context-aware answers.
 
 ## Project Highlights
 
-- Use a real CSV file of FAQs that Codebasics company is using right now. 
-- Their human staff will use this file to assist their course learners.
-- We will build an LLM based question and answer system that can reduce the workload of their human staff.
-- Students should be able to use this system to ask questions directly and get answers within seconds
+- Utilizes the **Mental Health FAQ dataset** from Kaggle: [Mental Health FAQ Dataset](https://www.kaggle.com/datasets/narendrageek/mental-health-faq-for-chatbot).
+- Builds an LLM-based question-and-answer system to provide instant responses to mental health-related queries.
+- Reduces the need for manual intervention by automating responses to common questions.
+- Provides a user-friendly interface for seamless interaction.
 
-## You will learn following,
-  - Langchain + Google Palm: LLM based Q&A
-  - Streamlit: UI
-  - Huggingface instructor embeddings: Text embeddings
-  - FAISS: Vector databse
+## You Will Learn
+- **LangChain + Google Generative AI**: Building an LLM-based Q&A system.
+- **Streamlit**: Creating a simple and interactive UI.
+- **Hugging Face Instructor Embeddings**: Generating text embeddings for semantic search.
+- **FAISS**: Efficiently storing and retrieving embeddings using a vector database.
 
 ## Installation
 
-1.Clone this repository to your local machine using:
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/Chaimaaorg/Medical-Chatbot-for-FAQ
+   ```
 
-```bash
-  git clone https://github.com/codebasics/langchain.git
-```
-2.Navigate to the project directory:
+2. Navigate to the project directory:
+   ```bash
+   cd medical-chatbot
+   ```
 
-```bash
-  cd 3_project_codebasics_q_and_a
-```
-3. Install the required dependencies using pip:
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-```bash
-  pip install -r requirements.txt
-```
-4.Acquire an api key through makersuite.google.com and put it in .env file
+4. Acquire an API key from [makersuite.google.com](https://makersuite.google.com/) and add it to the `.env` file:
+   ```bash
+   GOOGLE_API_KEY="your_api_key_here"
+   ```
 
-```bash
-  GOOGLE_API_KEY="your_api_key_here"
-```
+5. Download the **Mental Health FAQ dataset** from Kaggle and place it in the main directory.
+
 ## Usage
 
-1. Run the Streamlit app by executing:
-```bash
-streamlit run main.py
+1. Run the Streamlit app:
+   ```bash
+   streamlit run main.py
+   ```
 
-```
+2. The web app will open in your browser.
 
-2.The web app will open in your browser.
-
-- To create a knowledebase of FAQs, click on Create Knolwedge Base button. It will take some time before knowledgebase is created so please wait.
-
-- Once knowledge base is created you will see a directory called faiss_index in your current folder
-
-- Now you are ready to ask questions. Type your question in Question box and hit Enter
+   - To create a knowledge base of FAQs, click on the **Create Knowledge Base** button. This process may take some time, so please wait.
+   - Once the knowledge base is created, a directory called `faiss_index` will be generated in your project folder.
+   - You can now ask questions. Type your question in the input box and press **Enter**.
 
 ## Sample Questions
-  - Do you guys provide internship and also do you offer EMI payments?
-  - Do you have javascript course?
-  - Should I learn power bi or tableau?
-  - I've a MAC computer. Can I use powerbi on it?
-  - I don't see power pivot. how can I enable it?
+- What are the symptoms of depression?
+- How can I manage anxiety?
+- Is therapy effective for mental health issues?
+- What should I do if I feel overwhelmed?
+- Are there any self-care tips for mental well-being?
 
 ## Project Structure
 
-- main.py: The main Streamlit application script.
-- langchain_helper.py: This has all the langchain code
-- requirements.txt: A list of required Python packages for the project.
-- .env: Configuration file for storing your Google API key.
+- `main.py`: The main Streamlit application script.
+- `langchain_helper.py`: Contains all the LangChain code for Q&A processing.
+- `requirements.txt`: Lists the required Python packages for the project.
+- `.env`: Configuration file for storing your Google API key.
+
