@@ -1,0 +1,14 @@
+pandas
+transformers==4.48.2
+sentence-transformers==3.4.1
+huggingface_hub==0.28.1
+google-ai-generativelanguage==0.6.15 
+google-generativeai==0.8.4
+faiss-cpu==1.7.4
+langchain==0.3.17
+langchain-google-genai==2.0.9
+langchain-community==0.3.16
+python-dotenv
+streamlit
+tiktoken
+protobuf
